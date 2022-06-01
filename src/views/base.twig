@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html
+	{% if lang == '/en' %}
+		lang="en" xml:lang="en"
+	{% else %}
+		lang="fr" xml:lang="fr"
+	{% endif %}>
+<head>
+	{% include 'html-head.twig' %}
+</head>
+<body class="body" data-theme="light">
+	<div class="root">
+
+		{% include 'cookies.twig' %}
+		{% include 'main.twig' %}
+
+		<main id="content">
+			{% block content %}{% endblock %}
+		</main>
+
+		<script>
+			window.__WP_VARS = {
+				THEME_URI: '{{site.theme.uri}}',
+				BASE_URL: '{{site.url}}',
+				RELATIVE_BASE_URL: '{{site.url|relative}}',
+			}
+		</script>
+		<script src="{{site.theme.link}}/bundle.js?key={{random(50, 1000)}}" defer></script>
+
+	</div>
+	{{ wp_footer }}
+</body>
+</html>

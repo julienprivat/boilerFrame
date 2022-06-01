@@ -1,0 +1,1 @@
+export default s=>{const a=s.dataset.src;s.src=a,s.classList.add("loaded")};

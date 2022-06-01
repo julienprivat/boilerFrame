@@ -1,0 +1,1 @@
+import config from"@/config";import select from"dom-select";export default o=>(config.col=o<800||o>800&&o<1e3||o>1e3&&o<1300?4:o>1300&&o<1700?5:6,select("body").setAttribute("style","--col: "+config.col),config.col);

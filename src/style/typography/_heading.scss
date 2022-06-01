@@ -1,0 +1,200 @@
+/* ------------------------------------------------------------------ */
+/*        HEADING DECLARATION
+/* ------------------------------------------------------------------ */
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    // text-rendering: geometricPrecision;
+    // -moz-osx-font-smoothing: grayscale;
+    // -moz-font-smoothing: antialiased;
+    // -webkit-font-smoothing: antialiased;
+    // -webkit-tap-highlight-color: rgba(0,0,0,0);
+    // -webkit-touch-callout: none;
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+    text-underline-offset: 1px;
+    color: black;
+
+    &:hover {
+
+        text-decoration: none!important;
+
+    }
+}
+
+html {
+
+    font-size: 0.9rem;
+    color: $text;
+    letter-spacing: 0.6px;
+    line-height: 1.2;
+    font-family: 'Haas',sans-serif;
+
+    @include sizeone {
+
+        font-size: 0.9rem;
+
+    }
+
+}
+
+
+body {
+
+    margin: 0px;
+
+}
+
+
+.desk {
+
+    @include sizetwo {
+
+        display: none!important;
+
+    }
+
+}
+
+.mob {
+
+    display: none;
+
+    @include sizetwo {
+
+        display: inherit;
+
+    }
+
+}
+
+h2 {
+
+    font-family: 'MonoR', monospace;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    line-height: 1;
+    margin-top: 75px;
+
+    @include sizeone {
+
+        font-size: 1.3rem;
+        margin-top: 50px;
+
+    }
+
+}
+
+
+h3 {
+
+    font-family: 'MonoR', monospace;
+    font-size: 2.4rem;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 100px;
+
+    @include sizeone {
+
+        font-size: 1.3rem;
+        margin-bottom: 50px;
+        line-height: 1.1;
+
+    }
+
+}
+
+p {
+
+    font-family: 'Haas', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.35;
+    margin-top: 30px;
+
+    @include sizeone {
+
+        margin-top: 20px;
+        font-size: 1rem;
+
+    }
+
+}
+
+legend {
+
+    font-family: 'MonoR', monospace;
+    font-size: 0.65rem;
+    margin-top: 3px;
+    text-transform: uppercase;
+
+}
+
+strong {
+
+    font-family: 'Hm';
+
+}
+
+.know_more {
+
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: 'MonoR', monospace;
+
+    @include sizeone {
+
+        margin-top: 20px;
+
+    }
+    
+    h4 {
+
+
+        font-size: 1.1rem;
+        text-transform: uppercase;
+
+        @include sizeone {
+
+            font-size: 0.7rem;
+
+        }
+
+    }
+
+    h6 {
+
+        margin-top: 30px;
+        font-size: 1.4rem;
+
+        @include sizeone {
+
+            font-size: 0.8rem;
+            margin-top: 20px;
+
+        }
+
+    }
+
+    a {
+
+        text-decoration: underline;
+
+    }
+
+}
+
+.yellow {
+
+    color: $jaune;
+
+}
+
+
+.italique {
+
+    font-style: italic;
+
+}

@@ -1,0 +1,49 @@
+/* ------------------------------------------------------------------ */
+/*        MEDIA QUERIES
+/* ------------------------------------------------------------------ */
+@mixin sizezero {
+    @media screen and (max-width: $breakpoint-sizezero) {
+        @content;
+    }
+}
+@mixin sizeone {
+    @media screen and (max-width: $breakpoint-sizeone) {
+        @content;
+    }
+}
+
+@mixin mobile-portrait {
+    @media only screen and (max-device-width: 1024px) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin sizetwo {
+    @media screen and (max-width: $breakpoint-sizetwo) {
+        @content;
+    }
+}
+
+@mixin sizethree {
+    @media screen and (max-width: $breakpoint-sizethree)  {
+        @content;
+    }
+}
+
+@mixin sizefour {
+    @media screen and (max-width: $breakpoint-sizefour) {
+        @content;
+    }
+}
+
+@mixin sizefive {
+    @media screen and (min-width: $breakpoint-sizefive) {
+        @content;
+    }
+}
+
+@mixin nosizeone {
+    @media not screen and (max-width: $breakpoint-sizeone) {
+        @content;
+    }
+}

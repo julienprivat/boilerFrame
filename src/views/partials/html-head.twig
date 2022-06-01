@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+
+<title>{{ not fn('is_front_page') ? fn('wp_title', '|', true, 'right') }}GENIUS LOCI | Expérience</title>
+
+<meta content="Genius Loci est un programme inédit d’expositions imersives, créé par Marion Vignal, faisant dialoguer l’architecture, le design et l’art contemporain. Chaque édition ouvre les portes d’une demeure privée à la dimension artistique exceptionnelle et révèle l’esprit du lieu en engageant une conversation avec des artistes invités." name="description">
+
+<!-- Open Graph -->
+<meta property="og:title"content="GENIUS LOCI">
+<meta property="og:description" content="Genius Loci est un programme inédit d’expositions imersives, créé par Marion Vignal, faisant dialoguer l’architecture, le design et l’art contemporain. Chaque édition ouvre les portes d’une demeure privée à la dimension artistique exceptionnelle et révèle l’esprit du lieu en engageant une conversation avec des artistes invités.">
+<meta property="og:url" content="https://geniusloci-experience.com">
+<meta property="og:site_name" content="GENIUS LOCI">
+<meta property="og:image" content="{{site.theme.uri}}/assets/image/image_presentation.png">
+
+
+<!-- Twitter -->
+{# <meta content="{{options.title}}" name="twitter:title">
+<meta content="{{options[0].descripton}}" name="twitter:description">
+<meta content="{{options[0].image-link}}" name="twitter:image">
+<meta content="summary_large_image" name="twitter:card">
+<link href="http://samuelbardaji.com" rel="canonical"> #}
+
+<!--[if lt IE 9]>
+  <script>var isIE9 = true;</script>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Icons -->
+
+<link rel="icon" type="image/ico" href="{{site.theme.path}}/assets/fav/favicon.ico" />
+{# <link rel="icon" type="image/ico" href="localhost:8888{{site.theme.path}}/assets/fav/favicon.ico" /> #}
+
+
+<link rel="stylesheet" href="{{site.theme.link}}/style.css?key={{random(50, 1000)}}">
+
+{{wp_head}}

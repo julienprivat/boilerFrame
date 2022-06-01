@@ -1,0 +1,19 @@
+<div class="burger_part">
+    <div class="layout_nav"></div>
+    <div class="b-nav">
+        <a class="b-link nav_association" href={% if lang == '/en' %}"/en/"{% else %}"/"{% endif %}>{% if lang == '/en' %}Association{% else %}L'Association{% endif %}</a>
+        <a class="b-link nav_edition2022" href={% if lang == '/en' %}"/2022-edition"{% else %}"/edition-2022"{% endif %}>{% if lang == '/en' %}UpComing Edition, Paris<br><span class="base">2022</span>{% else %}Prochaine édition, Paris<br/><span class="base">2022</span>{% endif %}</a>
+        <a class="b-link nav_edition2021" href={% if lang == '/en' %}"/2021-edition"{% else %}"/edition-2021"{% endif %}>{% if lang == '/en' %}l'Ange Volant, Gio Ponti<br/><span class="base">2021</span>{% else %}l'Ange Volant, Gio Ponti<br/><span class="base">2021</span>{% endif %}</a>
+        <a class="b-link nav_reservation" href="">{% if lang == '/en' %}Reservations<br/><span class="base">opening soon</span>{% else %}Réservations<br/><span class="base">ouverture prochainement</span>{% endif %}</a>
+        <a class="b-link nav_soutenir" href={% if lang == '/en' %}"/support-us"{% else %}"/nous-soutenir"{% endif %}>{% if lang == '/en' %}Support Us{% else %}Nous Soutenir{% endif %}</a>
+    </div>
+
+            <!-- Burger-Icon -->
+    <div class="b-container mob">
+        <div class="b-menu mob">
+            <div class="b-bun b-bun--top"></div>
+            <div class="b-bun b-bun--mid"></div>
+            <div class="b-bun b-bun--bottom"></div>
+        </div>
+    </div>
+</div>

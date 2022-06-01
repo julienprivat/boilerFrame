@@ -1,0 +1,309 @@
+.reservations {
+
+    .wp-block-bookly-form {
+
+        margin-bottom: 80px;
+
+    }
+
+    .bookly-form {
+
+        margin-bottom: 40px;
+
+    }
+
+    .bookly-progress-tracker {
+
+        margin: 0 0 13px !important;
+
+    }
+
+    .bookly-progress-tracker > div {
+
+        color: $link;
+
+    }
+
+    .bookly-progress-tracker > div:first-child .step, .bookly-progress-tracker > div:last-child .step {
+
+        border-radius: 0px;
+
+    }
+
+    .bookly-progress-tracker .step {
+
+        background: $link;
+        height: 8px;
+
+    }
+
+    .bookly-form * {
+
+        font-size: 15.6px;
+        line-height: 1.6;
+        font-family: 'Hm';
+
+    }
+
+    .bookly-form .bookly-pagination > li.active, .bookly-form .bookly-columnizer .bookly-day, .bookly-form .bookly-schedule-date {
+
+        background: none!important;
+        border: none!important;
+        color: #FAED62!important;
+        text-transform: capitalize;
+        padding: 0;
+
+    }
+
+    .bookly-columnizer .bookly-hour {
+        background: none!important;
+        cursor: pointer;
+        border: 1px solid $text!important;
+        border-radius: 0px;
+        margin: 11px 0px !important;
+
+    }
+
+    .bookly-columnizer .bookly-hour .bookly-hour-icon {
+
+        display: none !important;
+
+    }
+
+    .bookly-form .bookly-columnizer .bookly-hour:hover {
+        border: 2px solid #FAED62!important;
+        color: #FAED62!important;
+        background-color: #FAED62!important;
+    }
+
+    .bookly-form .bookly-label-error, .bookly-form .bookly-progress-tracker > .active, .bookly-form .picker__nav--next, .bookly-form .pickadate__nav--prev, .bookly-form .picker__day:hover, .bookly-form .picker__day--selected:hover, .bookly-form .picker--opened .picker__day--selected, .bookly-form .picker__button--clear, .bookly-form .picker__button--today, .bookly-form .bookly-columnizer .bookly-hour span.bookly-waiting-list {
+
+        color : $text!important;
+
+    }
+
+    .bookly-form .bookly-progress-tracker > .active .step, .bookly-form .picker__frame, .bookly-form .bookly-service-step .bookly-week-days label, .bookly-form .bookly-repeat-step .bookly-week-days label, .bookly-form .bookly-columnizer .bookly-hour:hover .bookly-hour-icon span, .bookly-form .bookly-btn, .bookly-form .bookly-btn:active, .bookly-form .bookly-btn:focus, .bookly-form .bookly-btn:hover, .bookly-form .bookly-round, .bookly-form .bookly-square {
+
+        background : $text!important;
+
+    }
+
+    .bookly-form .bookly-btn, .bookly-form .bookly-btn:active, .bookly-form .bookly-btn:focus, .bookly-form .bookly-btn:hover {
+
+        background: none!important;
+
+    }
+    .bookly-form .bookly-btn:hover {
+
+        background: none!important;
+
+    }
+
+    .bookly-next-step span, .bookly-time-next span {
+
+        float: right !important;
+        // content: url("http://localhost:3000/wp-content/themes/genius/assets/icons/arrow_right.png");
+
+
+    }
+    .bookly-back-step span, .bookly-time-prev span {
+
+        float: left !important;
+        // content: url("http://localhost:3000/wp-content/themes/genius/assets/icons/arrow_left.png");
+
+    }
+
+    .bookly-columnizer-wrap, .bookly-columnizer-wrap {
+
+
+        // width: calc(100vw - var(--repRes) - 10px);
+
+        // @include sizethree {
+
+        //     width: calc(100vw - var(--repPart) - 10px);
+
+        // }
+
+        // @include sizeone {
+
+        //     width: calc(100vw - 40px);
+        //     // width: inherit
+
+        // }
+
+
+        .bookly-column {
+
+            // width: calc((100vw - var(--repRes) - 10px) / 6);
+
+            // @include sizethree {
+
+            //     width: calc((100vw - var(--repPart) - 10px) / 6);
+
+            // }
+
+            // @include sizeone {
+
+            //     width: calc((100vw - 40px) / 2);
+            //     // width: inherit;
+
+            // }
+
+        }
+    }
+
+    .bookly-form input[type="text"], .bookly-form input[type="number"], .bookly-form input[type="password"], .bookly-form textarea {
+
+        background-color: transparent;
+        border: none!important;
+        border-bottom: 1px solid $link!important;
+        border-radius: 0px!important;
+        padding: 8px 0px 6px !important;
+        font-weight: 100!important;
+        font-family: 'H';
+
+    }
+
+    .bookly-box.bookly-nav-steps {
+
+        padding-top: 0px!important;
+
+    }
+
+    .bookly-next-step .ladda-label, .bookly-back-step .ladda-label, .bookly-time-next .ladda-label, .bookly-time-prev .ladda-label {
+
+        font-size: 1.4rem !important;
+        text-transform: uppercase!important;
+        font-family: 'H'!important;
+        color: $text!important
+
+    }
+
+    .bookly-nav-btn .ladda-label {
+
+        color: $text!important;
+        width: calc(100vw - var(--repRes) - 28px);
+
+        @include sizethree {
+
+            width: calc(100vw - var(--repPart) - 28px);
+
+        }
+
+        @include sizeone {
+
+            width: calc(100vw - 58px - 10px);
+            // width: inherit
+
+        }
+
+    }
+
+    .bookly-back-step.bookly-js-back-step.bookly-btn.ladda-button {
+
+        text-align: left;
+        padding-left: 0px!important;
+
+    }
+
+    .bookly-next-step.bookly-js-next-step.bookly-btn.ladda-button {
+
+        text-align: right;
+        padding-right: 0px!important;
+
+    }
+
+    .intl-tel-input .selected-flag {
+
+        padding: 0 0 0 5px;
+
+    }
+
+    .bookly-form input[type="text"].bookly-error, .bookly-form input[type="password"].bookly-error, .bookly-form select.bookly-error, .bookly-form textarea.bookly-error, .bookly-extra-step div.bookly-extras-thumb.bookly-extras-selected {
+
+        border: 1px solid #FAED62!important
+
+    }
+
+    .bookly-form-group {
+
+        & > div {
+
+            margin-top: 0px!important;
+
+        }
+
+    }
+
+    .bookly-form .bookly-form-group > label {
+
+        color: #FAED62!important
+
+    }
+
+    .ladda-button[data-style=zoom-in] .ladda-label {
+
+        color: #FAED62!important;
+
+        img {
+
+            height: 20px;
+            width: auto;
+
+        }
+
+    }
+
+    .bookly-btn, .bookly-btn > span {
+
+        text-transform: none!important;
+        font-weight: 100!important;
+        text-align: left!important;
+
+    }
+
+    .bookly-columnizer .bookly-column.bookly-column-wide span.bookly-time-additional {
+
+        font-family: 'Hr'!important;
+
+    }
+
+    .bookly-hour.booked {
+
+        padding-top: 10px!important;
+
+        &:after {
+
+            color: $link;
+            font-size: 16px;
+
+        }
+
+        .ladda-label.bookly-time-main {
+
+            display: none;
+
+        }
+
+    }
+
+
+
+}
+
+html[lang='fr'] .bookly-hour.booked {
+
+    &:after {
+
+        content: 'COMPLET';
+
+    }
+}
+html[lang='en'] .bookly-hour.booked {
+
+    &:after {
+
+        content: 'SOLD OUT';
+
+    }
+}

@@ -1,0 +1,90 @@
+.root {
+    --plyr-color-main: transparent;
+    --plyr-video-control-background-hover: transparent;
+    --plyr-control-icon-size: 15px;
+    --plyr-font-family: $synd;
+    --plyr-font-size-time:1.1rem;
+    --plyr-range-track-height: 2.2px;
+    --plyr-video-progress-buffered-background: rgb(167, 167, 167);
+    --plyr-range-fill-background: white;
+    --plyr-range-thumb-height: 0px;
+    --plyr-control-spacing: 20px;
+    --plyr-video-background : rgb(0 0 0 / 0%);
+
+    .plyr__control[data-plyr="settings"] {
+        display: none;
+    }
+    input[data-plyr="volume"] {
+        display: none;
+    }
+    .plyr__volume {
+        max-width: 0;
+        min-width: 32px;
+    }
+    .plyr__progress input[type=range], .plyr__progress__buffer {
+        transform: translateY(1px);
+    }
+
+    .plyr__controls__item.plyr__time--current.plyr__time {
+        padding-right: 0;
+        padding-left: 25px;
+    }
+    .plyr--video .plyr__controls {
+        padding-bottom: 15px;
+    }
+
+    .plyr--video{
+        background: #ffffff00;
+    }
+
+    button.plyr__control[data-plyr="mute"] {
+
+        transform: translate(0px, -3px);
+
+        svg {
+
+            height: 18px;
+            width: 18px;
+
+        }
+
+    }
+
+    .plyr__controls {
+
+        justify-content: space-between;
+
+        .time {
+
+            display: flex;
+
+        }
+
+    }
+
+    .plyr__progress__container {
+
+        margin-right: 20px;
+
+    }
+
+    .cross_full {
+
+        position: absolute;
+        top: 30px;
+        right : 30px;
+        padding: 20px;
+        cursor: pointer;
+        z-index: 1000;
+
+        svg {
+
+            width: 27px;
+            height: 27px;
+
+        }
+
+    }
+
+
+}

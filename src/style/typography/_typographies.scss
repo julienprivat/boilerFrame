@@ -1,0 +1,29 @@
+/* ------------------------------------------------------------------ */
+/*        FONT FACE DECLARATION
+/* ------------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'MonoR';
+    src: url(https://geniusloci-experience.com/wp-content/themes/genius/assets/fonts/Monospace821BT-Roman.woff2),
+         url(https://geniusloci-experience.com/wp-content/themes/genius/assets/fonts/Monospace821BT-Roman.woff) format('woff'),
+         url(https://geniusloci-experience.com/wp-content/themes/genius/assets/fonts/Monospace821BT-Roman.otf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Haas';
+    src: url(https://geniusloci-experience.com/wp-content/themes/genius/assets/fonts/italic.woff2),
+         url(https://geniusloci-experience.com/wp-content/themes/genius/assets/fonts/italic.woff) format('woff'),
+         url(https://geniusloci-experience.com/wp-content/themes/genius/assets/fonts/italic.otf) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Haas';
+    src: url(https://geniusloci-experience.com/wp-content/themes/genius/assets/fonts/regular.woff2),
+         url(https://geniusloci-experience.com/wp-content/themes/genius/assets/fonts/regular.woff) format('woff'),
+         url(https://geniusloci-experience.com/wp-content/themes/genius/assets/fonts/regular.otf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

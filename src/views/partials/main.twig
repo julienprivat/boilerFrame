@@ -1,0 +1,60 @@
+<header class="header">
+    {% include 'burger.twig'%}
+    <nav class="nav">
+        <div id="l_association" data-slug="home" data-key="0" class="nav_item select">
+            <div class="onglet">
+                {% if lang == '/en' %}
+                    <a href='/en'><h1 class="title_part">The Association</h1></a>
+                {% else %}
+                    <a href='/'><h1 class="title_part">L'Association</h1></a>
+                {% endif %}
+            </div>
+            {% if lang == '/en' %} {% include 'en_association.twig'%} {% else %} {% include 'fr_association.twig'%} {% endif %}
+            <div class="ball">
+                <svg id="Calque_1" data-name="Calque 1" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="100"/>
+                </svg>
+            </div>
+        </div>
+        <div id="edition_2022" data-slug="edition-2022" data-key="1" class="nav_item">
+            <div class="onglet">
+                {% if lang == '/en' %}
+                    <a href='/2022-edition'><h1 class="title_part">Up Comming Edition, Paris - 2022</h1></a>
+                {% else %}
+                    <a href='/edition-2022'><h1 class="title_part">Prochaine Édition, Paris - 2022</h1></a>
+                {% endif %}
+            </div>
+            {% if lang == '/en' %} {% include 'en_2022.twig'%} {% else %} {% include 'fr_2022.twig'%} {% endif %}
+        </div>
+        <div id="edition_2021" data-slug="edition-2021" data-key="2" class="nav_item">
+            <div class="onglet">
+                {% if lang == '/en' %}
+                    <a href='/2021-edition'><h1 class="title_part">L'Ange Volant, Gio Ponti - 2021</h1></a>
+                {% else %}
+                    <a href='/edition-2021'><h1 class="title_part">L'Ange Volant, Gio Ponti - 2021</h1></a>
+                {% endif %}
+            </div>
+            {% if lang == '/en' %} {% include 'en_2021.twig'%} {% else %} {% include 'fr_2021.twig'%} {% endif %}
+        </div>
+        <div id="reservations" data-key="3" class="nav_item">
+            <div class="onglet">
+                {% if lang == '/en' %}
+                    <h1 class="title_part">Reservations - <span class="italique">opening soon</span></h1>
+                {% else %}
+                    <h1 class="title_part">Réservations - <span class="italique">ouverture prochainement</span></h1>
+                {% endif %}
+            </div>
+            <div class="background_part"></div>
+        </div>
+        <div id="soutenir" data-slug="nous-soutenir" data-key="4" class="nav_item">
+            <div class="onglet">
+                {% if lang == '/en' %}
+                    <a href='/support-us'><h1 class="title_part">Support Us</h1></a>
+                {% else %}
+                    <a href='/nous-soutenir'><h1 class="title_part">Nous soutenir</h1></a>
+                {% endif %}
+            </div>
+            {% if lang == '/en' %} {% include 'en_soutenir.twig'%} {% else %} {% include 'fr_soutenir.twig'%} {% endif %}
+        </div>
+    </nav>
+</header>

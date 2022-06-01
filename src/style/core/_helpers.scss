@@ -1,0 +1,32 @@
+/* ------------------------------------------------------------------ */
+/*        HELPERS
+/* ------------------------------------------------------------------ */
+
+
+.flex {
+	display: flex;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.block {
+	display: block !important;
+}
+
+.full-width {
+	width: 100% !important;
+}

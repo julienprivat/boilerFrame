@@ -1,0 +1,9 @@
+{% extends 'base.twig' %}
+{% block content %}
+
+<section class="page mentions" data-namespace="mentions" data-menu="mentions" dir="ltr" data-part="">
+    {% if lang == '/en' %} {% include "en_mentions.twig" %} {% else %} {% include "fr_mentions.twig" %} {% endif %}
+</section>
+
+
+{% endblock %}

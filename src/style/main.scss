@@ -1,0 +1,26 @@
+/* ------------------------------------------------------------------ */
+/*        Hello Styles
+/* ------------------------------------------------------------------ */
+
+// Core
+@import "core/reset";
+@import "core/import";
+
+@import "components/burger";
+@import "components/variables_bookly";
+@import "components/plyr.scss";
+@import "components/variables_plyr.scss";
+
+// Typography
+@import "typography/heading";
+@import "typography/typographies";
+
+// Layouts
+@import "layouts/body";
+
+// Views
+@import "views/home";
+
+// Components
+
+// UI
